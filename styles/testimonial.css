@@ -1,0 +1,25 @@
+.main {
+    padding-top: 5rem /* 80px */;
+    margin-top: 3.5rem /* 56px */;
+    margin-bottom: 6rem /* 96px */;
+    
+}
+
+.dark .main {
+    background-color: black;
+}
+
+@media (min-width: 1024px) {
+    .main {
+        margin-top: 7rem /* 112px */;
+        margin-bottom: 10rem /* 160px */;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 640px) {
+    
+}
