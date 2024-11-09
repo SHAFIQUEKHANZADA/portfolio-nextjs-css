@@ -1,0 +1,57 @@
+.firstDivContain {
+    width: 7rem /* 112px */;
+    height: 2.25rem /* 36px */;
+    margin-top: 1rem /* 16px */;
+}
+.myBtn {
+    width: 90px;
+    height: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: calc(var(--radius) - 2px);
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1rem /* 16px */;
+    line-height: 1.5rem /* 24px */;
+    transition: all 300ms;
+    position: relative;
+    overflow: hidden;
+}
+.dark .myBtn  {
+    border: 1px solid white;
+    color: white;
+}
+
+.firstSpan {
+    position: absolute;
+    font-size: 0.75rem /* 12px */;
+    line-height: 1rem /* 16px */;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0);
+    transition: transform 0.5s;
+  }
+
+  .secSpan {
+    position: absolute;
+    font-size: 0.75rem;  
+    inset: 0;  
+    color: #2563eb;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0); 
+    transition: transform 0.5s;  
+  }
+  
+  
+  
+  @media (max-width: 1024px) {
+    .firstSpan {
+      font-size: 10px;  
+    }
+  }
+  
+ 
