@@ -43,11 +43,11 @@ const Skill = ({
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="relative skill-container lg:w-[100px] lg:h-[50px] w-[70px] h-[35px] rounded-md   border-black dark:border-white dark:text-white text-base overflow-hidden"
+      className="mainHovDiv"
     >
       {/* Text */}
       <span
-        className={`absolute inset-0 flex items-center justify-center lg:text-xs text-[10px] font-light transform transition-transform duration-300 ${
+        className={`mainHovSp ${
           isHovered ? "-translate-x-full" : "translate-x-0"
         }`}
       >
@@ -56,7 +56,7 @@ const Skill = ({
 
       {/* Icon */}
       <span
-        className={`absolute inset-0 flex items-center justify-center lg:text-xs text-[10px] font-light transform transition-transform duration-300 ${
+        className={`mainHovSp ${
           isHovered ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -69,9 +69,9 @@ const Skill = ({
 const Skills = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500, // Duration of the animation
-      easing: "ease", // Easing function for the animation
-      once: false, // Whether animation should happen only once
+      duration: 500,  
+      easing: "ease",  
+      once: false,  
     });
   }, []);
   return (
