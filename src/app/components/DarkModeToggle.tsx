@@ -1,6 +1,6 @@
 "use client";
-
 import { useEffect, useState } from 'react';
+import "../../../styles/toggle.css"
 
 export default function DarkModeToggle() {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,7 +29,7 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={toggleDarkMode}
-      className="p-2 rounded-full bg-gray-200 dark:bg-gray-800"
+      className="mainToggle"
       aria-label="Toggle Dark Mode"
     >
       {darkMode ? '🌙' : '☀️'}

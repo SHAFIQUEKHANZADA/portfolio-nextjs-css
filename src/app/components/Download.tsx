@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
 import { FaDownload } from "react-icons/fa";
+import "../../../styles/download.css"
 
 interface DownloadButtonProps {
   isHovered: boolean;
-  fileUrl: string; // URL for the PDF file to download
+  fileUrl: string;  
 }
 
 export function DownloadButton({ isHovered, fileUrl }: DownloadButtonProps) {
@@ -12,21 +13,21 @@ export function DownloadButton({ isHovered, fileUrl }: DownloadButtonProps) {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = fileUrl;
-    link.download = 'file.pdf'; // Default file name
+    link.download = 'file.pdf';  
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   return (
-    <div className="w-28 h-9 mt-4 relative">
+    <div className="mainDown">
       <button
         onClick={handleDownload}
-        className="cv w-full h-full rounded-md bg-gradient-to-r from-slate-300 to-slate-200 shadow-sm border  border-zinc-100 dark:border-none dark:text-white text-base transition-all duration-200 relative overflow-hidden"
+        className="downBtn"
       >
         {/* Text */}
         <span
-          className={`absolute inset-0 flex p-1 text-xs font-light items-center justify-center transition-transform duration-200 ${
+          className={`downText ${
             isHovered ? "-translate-x-full" : "translate-x-0"
           }`}
         >
@@ -35,7 +36,7 @@ export function DownloadButton({ isHovered, fileUrl }: DownloadButtonProps) {
 
         {/* Icon */}
         <span
-          className={`absolute inset-0 flex text-xm items-center justify-center transition-transform duration-200 ${
+          className={`downIcon ${
             isHovered ? "translate-x-0" : "translate-x-full"
           }`}
         >

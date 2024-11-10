@@ -1,0 +1,52 @@
+.mainDown {
+    width: 7rem /* 112px */;
+    height: 2.25rem /* 36px */;
+    margin-top: 1rem /* 16px */;
+    position: relative;
+}
+
+.downText {
+    position: absolute;
+    inset: 0px;
+    display: flex;
+    padding: 0.25rem /* 4px */;
+    font-size: 0.75rem /* 12px */;
+    line-height: 1rem /* 16px */;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+.downIcon {
+    position: absolute;
+    inset: 0px;
+    display: flex;
+    font-size: 0.875rem;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.downBtn {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.375rem; 
+    background: linear-gradient(to right, #e2e8f0, #edf2f7);  
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);  
+    border: 1px solid #f4f4f5;  
+    color: #1a202c;  
+    transition: all 200ms;
+    position: relative;
+    overflow: hidden;
+}
+
+ 
+.dark .downBtn {
+    border: none;
+    color: #fff; 
+    background: linear-gradient(
+        to right,
+        #0f1b41,
+        #393434
+      );
+}

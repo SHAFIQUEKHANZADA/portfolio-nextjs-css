@@ -1,0 +1,15 @@
+.mainFlootIcon {
+    height: 100%;
+    width: 100%;
+    color: #737373;
+}
+.dark .mainFlootIcon {
+    color: #d4d4d4;
+}
+
+.flottingMainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

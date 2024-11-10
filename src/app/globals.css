@@ -114,14 +114,6 @@ html {
   background: linear-gradient(to bottom, #516076, #ffffff);
 }
 
-/* Dark mode gradient background */
-.dark .cv {
-  background: linear-gradient(
-    to right,
-    #0f1b41,
-    #393434
-  ); /* Blue to black gradient */
-}
 
 .scrollable-container {
   max-height: 400px;

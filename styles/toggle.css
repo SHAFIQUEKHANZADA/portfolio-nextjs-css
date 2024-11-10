@@ -1,0 +1,8 @@
+.mainToggle {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+}
+.dark .mainToggle {
+    background-color: #1f2937;
+}
